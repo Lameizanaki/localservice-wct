@@ -6,6 +6,11 @@ const authRoutes = require("./routes/auth");
 const categoryRoutes = require("./routes/category");
 const serviceRoutes = require("./routes/service");
 
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("Server running on port", PORT);
+});
+
 
 const app = express();
 app.use(cors());
